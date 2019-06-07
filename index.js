@@ -1,7 +1,7 @@
 const Koa = require('koa');
 const Router = require('koa-router'); // koa-router@7.x
 const graphqlHTTP = require('koa-graphql');
-const MyGraphQLSchema = require('./graphqlHTTP/schema');
+const MyGraphQLSchema = require('./graphQLHTTP/schema');
 
 const app = new Koa();
 const router = new Router();
