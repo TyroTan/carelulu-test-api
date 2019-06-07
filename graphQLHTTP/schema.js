@@ -19,7 +19,7 @@ const { Note, sequelize } = require("../db/models");
 const NoteType = new GraphQLObjectType({
   name: "Note",
   fields: () => ({
-    _id: { type: GraphQLString },
+    id: { type: GraphQLString },
     note: { type: GraphQLString },
     createdAt: { type: GraphQLDateTime }
   })
@@ -40,7 +40,7 @@ const RootQuery = new GraphQLObjectType({
       async resolve() {
         return Note.findAll({
           order: sequelize.literal('"createdAt" DESC')
-        })
+        });
       }
     }
   }
@@ -68,11 +68,11 @@ const mutation = new GraphQLObjectType({
         id: { type: GraphQLString }
       },
       async resolve(parentVal, { id }) {
-        const n = await Note.remove({
-          _id: id
+        const n = await Note.destroy({
+          where: { id: id }
         });
 
-        return { success: n.n && n.ok };
+        return { success: !!n };
       }
     }
   }

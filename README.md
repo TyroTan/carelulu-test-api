@@ -5,7 +5,7 @@ GraphQL api - test app
 ### Requirements
 1. NPM
 2. config file credentials (see db/config.example.js)
-  app = https://github.com/slugs99/carelulu-test-api
+  app = https://github.com/slugs99/carelulu-test-app
 3. Running postgres db (that #2 points to).
 
 ## Installation
