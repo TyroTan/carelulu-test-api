@@ -1,0 +1,20 @@
+{
+  "name": "koa-graphql-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^14.3.1",
+    "graphql-iso-date": "^3.6.1",
+    "koa": "^2.7.0",
+    "koa-graphql": "^0.8.0",
+    "koa-router": "^7.4.0",
+    "pg": "^7.11.0",
+    "sequelize": "^5.8.7"
+  }
+}
