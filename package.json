@@ -15,6 +15,6 @@
     "koa-graphql": "^0.8.0",
     "koa-router": "^7.4.0",
     "pg": "^7.11.0",
-    "sequelize": "^5.8.7"
+    "sequelize": "^5.15.1"
   }
 }
